@@ -1,114 +1,278 @@
-:root{
-    --main-color: #0c2db3; /*메인 컬러*/
-    --container-width: 1440px; /*페이지 폭*/
-}
-*{
+:root {
+    --main-color: #0C2D83;  /* 메인 컬러 */
+    --container-width: 1440px; /* 페이지 폭 */
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
+  }
+  
+  a {
     text-decoration: none;
-    color: black;
-}
-
-body{
+    color: #000;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
     font-size: 18px;
     background: #fff;
     font-family: 'Nanum Gothic', sans-serif;
-}
-
-h2{
+  }
+  
+  h2 {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 800;
-}
+  }
 
-.container{
+  section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+    h4{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+  }
+  .container {
     width: var(--container-width);
     /* outline: 1px solid red; */
-    margin: o auto;
-   
-    
-}
+    margin: 0 auto;
+  }
 
-#main-header{
+
+  
+  #main-header {
     height: 100px;
     /* background: #ccc; */
-    border: 1px solid #ccc;
-}
-
-#main-header .container {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #main-header .container {
     position: relative;
-   
-
-}
-#main-header .container h1{
+  }
+  
+  #main-header h1 {
     position: absolute;
     left: 20px;
     top: 26px;
-}
+  }
+  
 
-
-#gnb {
+  #gnb {
     position: absolute;
     left: 242px;
     top: 40px;
     overflow: hidden;
-}
-
-#gnb > ul > li{
+  }
+  
+  #gnb > ul > li {
     float: left;
     margin-right: 59px;
     
-}
-
-#gnb > ul > li > a{
+  }
+  
+  #gnb > ul > li > a {
     font-weight: 600;
-}
-
-#gnb > ul > li > a:hover{
+  }
+  
+  #gnb > ul > li > a:hover {
     color: var(--main-color);
-}
+  }
+  
 
-#util-btn {
+  #util-menu {
     position: absolute;
-    right: 55px;
+    right: 60px;
     top: 44px;
     color: #666;
     font-size: 14px;
-}
-
-#util-btn a{
+  }
+  
+  #util-menu a {
     color: #666;
-}
-
-#util-btn span{
+  }
+  
+  #util-menu span {
     margin: 0 14px;
-}
+  }
 
-#language{
+  #toggleBtn {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  #language {
     margin-left: 28px;
+    background-color: transparent;
     font-size: 10px;
     color: #666;
     width: 43px;
     height: 18px;
-    border: 1px solid black;
+    border: 1px solid #666;
     border-radius: 10px;
+  }
+
+  /* main-visual */
+  #main-visual{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #main-visual h2{
+    font-size: 46px;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+  }
+
+  #main-visual .container {
+    height: 550px;
+    background: #ccc;
+    position: relative;
+    background-image: url(../image/KakaoTalk_20220517_150726359.jpg);
+    background-size: cover;
+  }
+  
+
+  #main-visual .container h2{
+    position: absolute;
+    left: 59px;
+    top: 178px;
+    color: #fff;
+  }
+
+  /* intro  */
+
+  #intro .row {
+    background: #ccc;
+    overflow: hidden;
+    padding-left: 20px;
+    right: 20px;
+    
+  }
+
+  #intro .col{
+    width: 335px;
+    /* outline: 1px solid red; */
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  #intro .col img {
+    width: 335px;
+    height: 315px;
+  }
+
+  /* notice */
+
+  #notice .container{
+    background: turquoise;
+    overflow: hidden;
+  }
+  #notice .col{
+    text-align: center;
+    width: calc(var(--container-width) / 3);
+    float: left;
+    outline: 1px solid red;
+    padding-top: 73px;
+    padding-bottom: 28px;
+  }
+  #notice .col a{
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+  }
+
+  #notice .col h4{
+    margin-top: 25px;
+    margin-bottom: 14px;
+  }
+
+  #notice .col img{
+    height: 80px;
+  }
+  
+  #sns-banner .container{
+    background-color: #ccc;
+    background-image: url(../image/sns-banner.jpg);
+    height: 163px;
+    position: relative;
+  }
+
+  .banner-title h4 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+    font-size: 26px;
+  }
+
+  .banner-title p{
+    font-size: 16px;
+  }
+  .banner-title {
+    position: absolute;
+    left: 65px;
+    top: 40px;
+    color: #fff;
+  }
+
+  /* sns 아이콘  */
+
+  #sns-banner .container .sns{
+    position: absolute;
+    right: 78px;
+    top: 60px;
+    
+  }
+  
+  #sns-banner .container .sns a{
+      margin-left: 38px;
+      display: inline-block;
+      height: 48px;
+      /* outline: 1px solid red; */
+  }  
+/* facebook 위치 조정 */
+  #sns-banner .container .sns a:last-child{
+    position: relative;
+    top: -5px;
+  }
+
+#main-footer{
+  font-size: 14px;
+  margin-top: 100px;
+  
 }
 
-#toggleBtn{
-    position: absolute;
-    right: 20px;
-    top: 40px;
-    width: 18px;
-    height: 16px;
-    border: none;
-    /* 투명 */
-    /* background-color: transparent; */
+
+#main-footer .adress, 
+#main-footer .copy{
+  color: #666;
 }
+
+#main-footer .footer-menu{
+  margin-bottom: 20px;
+}
+
+#main-footer p{
+  margin-bottom: 8px;
+}
+
+#main-footer .container{
+  padding: 46px 0;
+  padding-left: 20px;
+  border-top: 1px solid #aaa;
+}
+
+
